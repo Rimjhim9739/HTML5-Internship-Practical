@@ -1,0 +1,304 @@
+
+/* =================================
+   1. BASIC RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =================================
+   2. HEADER
+================================= */
+
+.header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #dbeafe;
+    color: #172554;
+}
+
+.header h1 {
+    margin-bottom: 8px;
+}
+
+/* =================================
+   3. NAVIGATION - FLEXBOX
+================================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #172554;
+    padding: 20px 7%;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background-color: #e0e7ff;
+}
+
+.hero h2 {
+    color: #172554;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #172554;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* =================================
+   5. COURSES - CSS GRID
+================================= */
+
+.courses {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.courses h2 {
+    color: #172554;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual Cards */
+
+.card {
+    background-color: white;
+    padding: 30px 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.card h3 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.card a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #f59e0b;
+}
+
+/* Card Hover Effects */
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+   6. ARTICLE SECTION
+================================= */
+
+.article-section {
+    background-color: white;
+    margin: 30px 7%;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.article-section h2,
+.article-section h3 {
+    color: #172554;
+    margin-bottom: 15px;
+}
+
+.article-section ul {
+    padding-left: 25px;
+}
+
+/* =================================
+   7. ASIDE SECTION
+================================= */
+
+.related {
+    background-color: #dbeafe;
+    margin: 30px 7%;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.related h2 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.related ul {
+    padding-left: 25px;
+}
+
+.related a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* =================================
+   8. ABOUT SECTION
+================================= */
+
+.about {
+    text-align: center;
+    padding: 45px 20px;
+    background-color: #e0e7ff;
+}
+
+.about h2 {
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+/* =================================
+   9. FOOTER
+================================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 22px;
+}
+
+/* =================================
+   10. TABLET RESPONSIVENESS
+================================= */
+
+@media (max-width: 900px) {
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+}
+
+/* =================================
+   11. MOBILE RESPONSIVENESS
+================================= */
+
+@media (max-width: 600px) {
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero h2 {
+        font-size: 25px;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .courses {
+        padding: 40px 20px;
+    }
+
+    .article-section,
+    .related {
+        margin: 20px;
+        padding: 20px;
+    }
+
+}
