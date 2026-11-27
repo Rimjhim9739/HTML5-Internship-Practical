@@ -11,6 +11,7 @@
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%;
 }
 
 body {
@@ -26,39 +27,41 @@ body {
 
 .header {
     text-align: center;
-    padding: 30px 20px;
+    padding: 1.5rem 1rem;
     background-color: #dbeafe;
     color: #172554;
 }
 
 .header h1 {
-    margin-bottom: 8px;
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
 }
 
 /* =================================
-   3. NAVIGATION - FLEXBOX
+   3. NAVIGATION
+   MOBILE FIRST
 ================================= */
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    gap: 1rem;
     background-color: #172554;
-    padding: 20px 7%;
+    padding: 1.25rem 5%;
+    text-align: center;
 }
 
 .logo {
     color: white;
-    font-size: 22px;
+    font-size: 1.4rem;
 }
 
 .nav-links {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
+    gap: 0.75rem;
     list-style: none;
 }
 
@@ -78,19 +81,19 @@ body {
 
 .hero {
     text-align: center;
-    padding: 75px 20px;
+    padding: 3rem 1rem;
     background-color: #e0e7ff;
 }
 
 .hero h2 {
     color: #172554;
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
 }
 
 .hero p {
-    max-width: 650px;
-    margin: 0 auto 25px;
+    max-width: 40rem;
+    margin: 0 auto 1.5rem;
 }
 
 .hero-button {
@@ -98,63 +101,62 @@ body {
     background-color: #172554;
     color: white;
     text-decoration: none;
-    padding: 12px 22px;
-    border-radius: 6px;
+    padding: 0.75rem 1.4rem;
+    border-radius: 0.4rem;
     transition: background-color 0.3s ease,
                 transform 0.3s ease;
 }
 
 .hero-button:hover {
     background-color: #1d4ed8;
-    transform: translateY(-3px);
+    transform: translateY(-0.2rem);
 }
 
 /* =================================
    5. COURSES - CSS GRID
+   MOBILE: 1 COLUMN
 ================================= */
 
 .courses {
-    padding: 60px 7%;
+    padding: 2.5rem 5%;
     text-align: center;
 }
 
 .courses h2 {
     color: #172554;
-    margin-bottom: 35px;
-    font-size: 30px;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
 }
-
-/* Individual Cards */
 
 .card {
     background-color: white;
-    padding: 30px 22px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.8rem 1.2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease,
                 box-shadow 0.3s ease;
 }
 
 .card-icon {
-    font-size: 40px;
-    margin-bottom: 12px;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .card h3 {
     color: #172554;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .card p {
     color: #555;
-    margin-bottom: 18px;
+    margin-bottom: 1.1rem;
 }
 
 .card a {
@@ -168,11 +170,9 @@ body {
     color: #f59e0b;
 }
 
-/* Card Hover Effects */
-
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
 /* =================================
@@ -181,19 +181,19 @@ body {
 
 .article-section {
     background-color: white;
-    margin: 30px 7%;
-    padding: 30px;
-    border-radius: 10px;
+    margin: 1.5rem 5%;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
 }
 
 .article-section h2,
 .article-section h3 {
     color: #172554;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
 .article-section ul {
-    padding-left: 25px;
+    padding-left: 1.5rem;
 }
 
 /* =================================
@@ -202,18 +202,18 @@ body {
 
 .related {
     background-color: #dbeafe;
-    margin: 30px 7%;
-    padding: 25px;
-    border-radius: 10px;
+    margin: 1.5rem 5%;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
 }
 
 .related h2 {
     color: #172554;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 .related ul {
-    padding-left: 25px;
+    padding-left: 1.5rem;
 }
 
 .related a {
@@ -227,13 +227,13 @@ body {
 
 .about {
     text-align: center;
-    padding: 45px 20px;
+    padding: 2.8rem 1rem;
     background-color: #e0e7ff;
 }
 
 .about h2 {
     color: #172554;
-    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
 }
 
 /* =================================
@@ -244,61 +244,91 @@ footer {
     background-color: #172554;
     color: white;
     text-align: center;
-    padding: 22px;
+    padding: 1.4rem 1rem;
 }
 
 /* =================================
    10. TABLET RESPONSIVENESS
+   768px AND ABOVE
 ================================= */
 
-@media (max-width: 900px) {
+@media (min-width: 768px) {
+
+    .header {
+        padding: 2rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
 
     .container {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .navbar {
-        justify-content: center;
+    .courses {
+        padding: 3rem 5%;
+    }
+
+    .article-section,
+    .related {
+        margin: 2rem 5%;
+        padding: 2rem;
     }
 
 }
 
 /* =================================
-   11. MOBILE RESPONSIVENESS
+   11. DESKTOP RESPONSIVENESS
+   1200px AND ABOVE
 ================================= */
 
-@media (max-width: 600px) {
+@media (min-width: 1200px) {
 
     .navbar {
-        flex-direction: column;
-        text-align: center;
+        padding: 1.25rem 7%;
     }
 
     .nav-links {
-        flex-direction: column;
-        gap: 12px;
+        gap: 1.6rem;
     }
 
     .hero {
-        padding: 50px 20px;
+        padding: 5rem 2rem;
     }
 
     .hero h2 {
-        font-size: 25px;
+        font-size: 2.3rem;
     }
 
     .container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
     }
 
     .courses {
-        padding: 40px 20px;
+        padding: 4rem 7%;
     }
 
     .article-section,
     .related {
-        margin: 20px;
-        padding: 20px;
+        margin: 2rem 7%;
     }
 
 }
