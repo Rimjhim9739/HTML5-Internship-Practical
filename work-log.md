@@ -208,3 +208,24 @@ This practical helped me understand professional Git workflows. I gained hands-o
 **Learning Outcome:**
 I learned how Git Flow organises development through different branches and how teams can choose a branching strategy based on their release process and project requirements.
 
+
+### 7. CIA Research – Strong GitHub Profile for Full-Stack Developers
+
+**Question:** What does a strong GitHub profile look like for a full-stack developer?
+
+**Key Insights:**
+
+- Maintain a professional GitHub profile README.
+- Showcase 2–3 polished full-stack projects.
+- Write meaningful commit messages.
+- Maintain consistent coding activity.
+- Add clear README files with setup instructions, screenshots and technology details.
+- Use GitHub Actions for automated testing and CI.
+- Contribute to open-source projects.
+- Maintain a clean project structure and appropriate .gitignore files.
+- Include live project demos and portfolio links.
+
+**Learning Outcome:**
+
+I learned that a strong GitHub profile acts as a technical portfolio. It demonstrates coding skills, project experience, documentation habits and professional development practices.
+
