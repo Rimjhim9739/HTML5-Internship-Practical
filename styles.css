@@ -1,0 +1,334 @@
+
+/* =================================
+   1. BASIC RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =================================
+   2. HEADER
+================================= */
+
+.header {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background-color: #dbeafe;
+    color: #172554;
+}
+
+.header h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}
+
+/* =================================
+   3. NAVIGATION
+   MOBILE FIRST
+================================= */
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: #172554;
+    padding: 1.25rem 5%;
+    text-align: center;
+}
+
+.logo {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #facc15;
+}
+
+/* =================================
+   4. HERO SECTION
+================================= */
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #e0e7ff;
+}
+
+.hero h2 {
+    color: #172554;
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 40rem;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-button {
+    display: inline-block;
+    background-color: #172554;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.4rem;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-0.2rem);
+}
+
+/* =================================
+   5. COURSES - CSS GRID
+   MOBILE: 1 COLUMN
+================================= */
+
+.courses {
+    padding: 2.5rem 5%;
+    text-align: center;
+}
+
+.courses h2 {
+    color: #172554;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    background-color: white;
+    padding: 1.8rem 1.2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.25rem 0.6rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.card h3 {
+    color: #172554;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    color: #555;
+    margin-bottom: 1.1rem;
+}
+
+.card a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card a:hover {
+    color: #f59e0b;
+}
+
+.card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+/* =================================
+   6. ARTICLE SECTION
+================================= */
+
+.article-section {
+    background-color: white;
+    margin: 1.5rem 5%;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+}
+
+.article-section h2,
+.article-section h3 {
+    color: #172554;
+    margin-bottom: 1rem;
+}
+
+.article-section ul {
+    padding-left: 1.5rem;
+}
+
+/* =================================
+   7. ASIDE SECTION
+================================= */
+
+.related {
+    background-color: #dbeafe;
+    margin: 1.5rem 5%;
+    padding: 1.5rem;
+    border-radius: 0.6rem;
+}
+
+.related h2 {
+    color: #172554;
+    margin-bottom: 0.75rem;
+}
+
+.related ul {
+    padding-left: 1.5rem;
+}
+
+.related a {
+    color: #1d4ed8;
+    text-decoration: none;
+}
+
+/* =================================
+   8. ABOUT SECTION
+================================= */
+
+.about {
+    text-align: center;
+    padding: 2.8rem 1rem;
+    background-color: #e0e7ff;
+}
+
+.about h2 {
+    color: #172554;
+    margin-bottom: 0.75rem;
+}
+
+/* =================================
+   9. FOOTER
+================================= */
+
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1rem;
+}
+
+/* =================================
+   10. TABLET RESPONSIVENESS
+   768px AND ABOVE
+================================= */
+
+@media (min-width: 768px) {
+
+    .header {
+        padding: 2rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .courses {
+        padding: 3rem 5%;
+    }
+
+    .article-section,
+    .related {
+        margin: 2rem 5%;
+        padding: 2rem;
+    }
+
+}
+
+/* =================================
+   11. DESKTOP RESPONSIVENESS
+   1200px AND ABOVE
+================================= */
+
+@media (min-width: 1200px) {
+
+    .navbar {
+        padding: 1.25rem 7%;
+    }
+
+    .nav-links {
+        gap: 1.6rem;
+    }
+
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .hero h2 {
+        font-size: 2.3rem;
+    }
+
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.8rem;
+    }
+
+    .courses {
+        padding: 4rem 7%;
+    }
+
+    .article-section,
+    .related {
+        margin: 2rem 7%;
+    }
+
+}

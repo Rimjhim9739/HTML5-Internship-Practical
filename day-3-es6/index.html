@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Performance Dashboard</h1>
+        <p>Explore student records using modern JavaScript</p>
+    </header>
+
+    <main class="container">
+
+        <section class="stats">
+            <div class="card">
+                <h3>Total Students</h3>
+                <p id="totalStudents">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Average Marks</h3>
+                <p id="averageMarks">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Top Performer</h3>
+                <p id="topStudent">-</p>
+            </div>
+        </section>
+
+        <section class="controls">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search student..."
+            >
+
+            <button id="showAll">Show All</button>
+            <button id="showPassed">Passed Students</button>
+            <button id="showFailed">Failed Students</button>
+        </section>
+
+        <section>
+            <h2>Student Records</h2>
+            <div id="studentList" class="student-list"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Day 3 Practical | Modern JavaScript ES6+</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
