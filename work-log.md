@@ -94,3 +94,89 @@ Learn modern JavaScript features including arrow functions, destructuring, templ
 I understood how closures preserve variables and how JavaScript handles synchronous and asynchronous operations through the event loop.
 
 **Status:** Completed
+
+
+
+# Week 1 â€“ Day 4: Responsive Web Design Research
+
+**Topic:** Responsive Design Best Practices â€“ 2026
+
+### 1. Research Objective
+To understand modern responsive web design practices and learn how to create websites that work smoothly across mobile, tablet, and desktop devices.
+
+### 2. Key Learnings
+
+- **Mobile-first design:** Start with mobile layouts and progressively enhance the design for larger screens.
+- **Responsive breakpoints:** Use 320px for mobile, 768px for tablets, and 1200px for desktops as practical starting points.
+- **CSS media queries:** Apply different styles depending on viewport width.
+- **Fluid layouts:** Use Flexbox, CSS Grid, and percentages to create flexible layouts.
+- **Relative units:** Prefer rem, em, %, vw, and vh for flexible sizing instead of relying entirely on fixed pixels.
+- **Responsive images:** Use srcset, sizes, and the picture element to serve suitable images for different screens.
+- **Fluid typography:** Use clamp() to make text scale within readable minimum and maximum sizes.
+- **Accessibility:** Maintain readable contrast, visible focus indicators, keyboard accessibility, and sufficiently large touch targets.
+
+### 3. Common Mistakes Identified
+- Using fixed widths that cause horizontal scrolling.
+- Choosing breakpoints without considering the content.
+- Ignoring smaller mobile screens.
+- Using images that overflow their containers.
+- Neglecting accessibility and readability.
+
+### 4. Practical Application
+Applied mobile-first CSS to my HTML5 Learning Hub project using:
+- Mobile layout as the default.
+- Tablet media query at 768px.
+- Desktop media query at 1200px.
+- CSS Grid for responsive learning cards.
+- Relative units for spacing and typography.
+
+### 5. Conclusion
+This research helped me understand how responsive design improves usability across different devices. I learned to create flexible layouts, use appropriate breakpoints, and follow accessibility practices while developing frontend websites.
+# Week 1 – Day 5: Git Workflow and Version Control
+
+**Date:** 28 November 2026
+
+### 1. Learning Objective
+Master Git branching, committing, interactive rebasing, merge conflict resolution and repository management.
+
+### 2. Practical Implementation
+
+- Created and worked on the feature/week-1-day-5 branch.
+- Practised interactive Git rebase using git rebase -i HEAD~3.
+- Squashed three commits into one clean commit.
+- Created temporary branches to practise merge conflict resolution.
+- Created conflicting changes in the same file across two branches.
+- Identified and resolved an add/add merge conflict.
+- Used git add and git commit to complete the merge.
+- Verified the commit history using git log --oneline --graph.
+- Deleted temporary practice branches after completing the exercise.
+- Created a root-level .gitignore file.
+
+### 3. Git Commands Practised
+
+- git branch – List local branches.
+- git switch -c – Create and switch to a new branch.
+- git stash push -u – Temporarily save tracked and untracked changes.
+- git stash pop – Restore saved changes.
+- git rebase -i HEAD~3 – Perform interactive rebase.
+- git merge – Merge branches.
+- git add – Stage resolved changes.
+- git commit – Save changes.
+- git branch -D – Delete temporary branches.
+- git log --oneline --graph – Visualise commit history.
+
+### 4. Learning Outcomes
+
+- Understood how interactive rebase helps maintain clean commit history.
+- Learned how to squash multiple commits into one.
+- Understood why merge conflicts occur.
+- Practised resolving conflicts using VS Code Merge Editor.
+- Learned how .gitignore prevents unnecessary files from being tracked.
+- Improved confidence in managing Git branches and repositories.
+
+### 5. Conclusion
+
+This practical helped me understand professional Git workflows. I gained hands-on experience with interactive rebasing, commit squashing, branching, merge conflict resolution and repository organisation.
+
+**Practical Status:** Completed
+
