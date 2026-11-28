@@ -180,3 +180,31 @@ This practical helped me understand professional Git workflows. I gained hands-o
 
 **Practical Status:** Completed
 
+
+### 6. CIA Research – Git Flow Branching Strategy
+
+**Question:** What is the Git Flow branching strategy and when should a team adopt it?
+
+**Key Insights:**
+
+- Git Flow is a structured branching model used to organise software development.
+- The main branch contains production-ready code.
+- The develop branch integrates upcoming features.
+- Feature branches are used to develop new functionality.
+- Release branches help prepare and stabilise a new version.
+- Hotfix branches are used to fix urgent production issues.
+
+**When to Adopt Git Flow:**
+- When a project follows scheduled releases.
+- When multiple developers work on different features.
+- When release management requires clear separation.
+- When production hotfixes must be handled independently.
+
+**When Not to Adopt Git Flow:**
+- Very small development teams.
+- Projects using continuous deployment.
+- Projects following trunk-based development.
+
+**Learning Outcome:**
+I learned how Git Flow organises development through different branches and how teams can choose a branching strategy based on their release process and project requirements.
+
