@@ -1,0 +1,5 @@
+Git Rebase Practice
+First commit: Learning Git commits.
+Second commit: Understanding interactive rebase.
+
+Third commit: Learning squash merge.
